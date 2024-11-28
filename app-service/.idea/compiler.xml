@@ -7,14 +7,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="app-application" />
-        <module name="app-dataaccess" />
-        <module name="app-messaging" />
-        <module name="app-application-service" />
         <module name="app-container" />
-        <module name="app-domain-core" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="app-application" target="17" />
+      <module name="app-application-service" target="17" />
+      <module name="app-dataaccess" target="17" />
+      <module name="app-domain" target="17" />
+      <module name="app-domain-core" target="17" />
+      <module name="app-messaging" target="17" />
+      <module name="app-service" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

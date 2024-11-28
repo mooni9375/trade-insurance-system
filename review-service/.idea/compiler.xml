@@ -9,13 +9,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="review-container" />
         <module name="review-application" />
-        <module name="review-domain-core" />
-        <module name="review-dataaccess" />
-        <module name="review-application-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="review-application-service" target="17" />
+      <module name="review-dataaccess" target="17" />
+      <module name="review-domain" target="17" />
+      <module name="review-domain-core" target="17" />
       <module name="review-messaging" target="17" />
+      <module name="review-service" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
