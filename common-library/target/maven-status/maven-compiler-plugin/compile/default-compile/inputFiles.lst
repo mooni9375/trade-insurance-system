@@ -1,0 +1,14 @@
+/Users/mooni/development/trade-insurance-system/common-library/src/main/java/com/tradeinsurance/commonlibrary/domain/entity/AggregateRoot.java
+/Users/mooni/development/trade-insurance-system/common-library/src/main/java/com/tradeinsurance/commonlibrary/domain/entity/BaseEntity.java
+/Users/mooni/development/trade-insurance-system/common-library/src/main/java/com/tradeinsurance/commonlibrary/domain/event/DomainEvent.java
+/Users/mooni/development/trade-insurance-system/common-library/src/main/java/com/tradeinsurance/commonlibrary/domain/event/publisher/DomainEventPublisher.java
+/Users/mooni/development/trade-insurance-system/common-library/src/main/java/com/tradeinsurance/commonlibrary/domain/exception/DomainException.java
+/Users/mooni/development/trade-insurance-system/common-library/src/main/java/com/tradeinsurance/commonlibrary/domain/valueobject/AppId.java
+/Users/mooni/development/trade-insurance-system/common-library/src/main/java/com/tradeinsurance/commonlibrary/domain/valueobject/AppStatus.java
+/Users/mooni/development/trade-insurance-system/common-library/src/main/java/com/tradeinsurance/commonlibrary/domain/valueobject/BaseId.java
+/Users/mooni/development/trade-insurance-system/common-library/src/main/java/com/tradeinsurance/commonlibrary/domain/valueobject/CountryCode.java
+/Users/mooni/development/trade-insurance-system/common-library/src/main/java/com/tradeinsurance/commonlibrary/domain/valueobject/CustomerId.java
+/Users/mooni/development/trade-insurance-system/common-library/src/main/java/com/tradeinsurance/commonlibrary/domain/valueobject/Money.java
+/Users/mooni/development/trade-insurance-system/common-library/src/main/java/com/tradeinsurance/commonlibrary/domain/valueobject/PhoneNumber.java
+/Users/mooni/development/trade-insurance-system/common-library/src/main/java/com/tradeinsurance/commonlibrary/domain/valueobject/ReviewId.java
+/Users/mooni/development/trade-insurance-system/common-library/src/main/java/com/tradeinsurance/commonlibrary/domain/valueobject/ReviewStatus.java

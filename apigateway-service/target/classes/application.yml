@@ -1,0 +1,50 @@
+server:
+  port: 8000
+
+#system:
+#  properties:
+#    io.netty.dns.noNative: true
+spring:
+  application:
+    name: apigateway-service
+
+logging:
+  level:
+    io.netty: DEBUG
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+
+  application:
+    name: apigateway-service
+
+  cloud:
+    gateway:
+      default-filters:
+        - name: GlobalFilter
+          args:
+            baseMessage: Spring Cloud Gateway GlobalFilter
+            preLogger: true
+            postLogger: true
+      # CustomFilter : 라우터별로 각각 설정 필요 (vs GlobalFilter)
+      routes:
+        - id: app-service
+          uri: lb://APP-SERVICE
+          predicates:
+            - Path=/app-service/**
+          filters:
+            - RemoveRequestHeader=Cookie
+            - RewritePath=/app-service/(?<segment>.*), /$\{segment}
+        - id: review-service
+          uri: lb://REVIEW-SERVICE
+          predicates:
+            - Path=/review-service/**
+          filters:
+            - RemoveRequestHeader=Cookie
+            - RewritePath=/review-service/(?<segment>.*), /$\{segment}
