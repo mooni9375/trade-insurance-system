@@ -1,0 +1,10 @@
+com/tradeinsurance/appdomaincore/AppDomainService.class
+com/tradeinsurance/appdomaincore/entity/Customer.class
+com/tradeinsurance/appdomaincore/entity/App$Builder.class
+com/tradeinsurance/appdomaincore/entity/App.class
+com/tradeinsurance/appdomaincore/exception/AppDomainException.class
+com/tradeinsurance/appdomaincore/valueobject/StreetAddress.class
+com/tradeinsurance/appdomaincore/event/AppEvent.class
+com/tradeinsurance/appdomaincore/exception/AppNotFoundException.class
+com/tradeinsurance/appdomaincore/event/AppCreatedEvent.class
+com/tradeinsurance/appdomaincore/AppDomainServiceImpl.class

@@ -1,0 +1,7 @@
+com/tradeinsurance/appdataaccess/entity/AppEntity$AppEntityBuilder.class
+com/tradeinsurance/appdataaccess/entity/AppEntity.class
+com/tradeinsurance/appdataaccess/entity/AppStreetAddressEntity$AppStreetAddressEntityBuilder.class
+com/tradeinsurance/appdataaccess/repository/AppJpaRepository.class
+com/tradeinsurance/appdataaccess/adapter/AppRepositoryImpl.class
+com/tradeinsurance/appdataaccess/mapper/AppDataAccessMapper.class
+com/tradeinsurance/appdataaccess/entity/AppStreetAddressEntity.class

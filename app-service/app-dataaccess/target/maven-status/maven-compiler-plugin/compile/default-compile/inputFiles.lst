@@ -1,0 +1,5 @@
+/Users/mooni/development/trade-insurance-system/app-service/app-dataaccess/src/main/java/com/tradeinsurance/appdataaccess/adapter/AppRepositoryImpl.java
+/Users/mooni/development/trade-insurance-system/app-service/app-dataaccess/src/main/java/com/tradeinsurance/appdataaccess/entity/AppEntity.java
+/Users/mooni/development/trade-insurance-system/app-service/app-dataaccess/src/main/java/com/tradeinsurance/appdataaccess/entity/AppStreetAddressEntity.java
+/Users/mooni/development/trade-insurance-system/app-service/app-dataaccess/src/main/java/com/tradeinsurance/appdataaccess/mapper/AppDataAccessMapper.java
+/Users/mooni/development/trade-insurance-system/app-service/app-dataaccess/src/main/java/com/tradeinsurance/appdataaccess/repository/AppJpaRepository.java

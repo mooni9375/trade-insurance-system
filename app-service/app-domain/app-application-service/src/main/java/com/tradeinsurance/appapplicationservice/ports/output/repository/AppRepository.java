@@ -9,6 +9,6 @@ public interface AppRepository {
 
     App save(App app);
 
-    Optional<App> findById(AppId appId);
+//    Optional<App> findById(AppId appId);
 
 }
