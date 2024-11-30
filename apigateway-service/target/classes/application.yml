@@ -7,10 +7,21 @@ server:
 spring:
   application:
     name: apigateway-service
+  cloud:
+    config:
+      name: tradeinsurance
+  config:
+    import: configserver:http://127.0.0.1:8888
 
-logging:
-  level:
-    io.netty: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: gateway, info, refresh, health, beans, httptrace
+  endpoint:
+    info:
+      enabled: true
 
 
 eureka:
@@ -18,8 +29,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:8761/eureka
-
+      defaultZone: http://127.0.0.1:8761/eureka
 
   application:
     name: apigateway-service
@@ -35,16 +45,31 @@ eureka:
       # CustomFilter : 라우터별로 각각 설정 필요 (vs GlobalFilter)
       routes:
         - id: app-service
-          uri: lb://APP-SERVICE
+          uri: lb://app-service
           predicates:
             - Path=/app-service/**
+            - Method=GET,POST
           filters:
-            - RemoveRequestHeader=Cookie
+#            - RemoveRequestHeader=Cookie
+            - RewritePath=/app-service/(?<segment>.*), /$\{segment}
+        - id: app-service-actuator
+          uri: lb://app-service
+          predicates:
+            - Path=/app-service/actuator/**
+            - Method=GET,POST
+          filters:
+#            - RemoveRequestHeader=Cookie
             - RewritePath=/app-service/(?<segment>.*), /$\{segment}
         - id: review-service
-          uri: lb://REVIEW-SERVICE
+          uri: lb://review-service
           predicates:
             - Path=/review-service/**
           filters:
-            - RemoveRequestHeader=Cookie
+#            - RemoveRequestHeader=Cookie
             - RewritePath=/review-service/(?<segment>.*), /$\{segment}
+
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    io.netty: DEBUG

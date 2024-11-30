@@ -6,7 +6,21 @@ spring:
     name: app-service
   cloud:
     config:
-      name: app-service
+      name: tradeinsurance
+  config:
+    import: configserver:http://127.0.0.1:8888
+
+#tradeinsurance:
+#  profile: dev
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info, refresh, health, beans
+  endpoint:
+    info:
+      enabled: true
 
 eureka:
   instance:
@@ -17,3 +31,7 @@ eureka:
     service-url:
       defaultZone: http://127.0.0.1:8761/eureka
 
+
+logging:
+  level:
+    web: debug

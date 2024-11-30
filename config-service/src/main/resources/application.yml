@@ -7,6 +7,12 @@ spring:
   cloud:
     config:
       server:
+#        native:
+#          search-locations: file:///Users/mooni/development/trade-insurance-system-settings
         git:
           uri: file:///Users/mooni/development/trade-insurance-system-settings
           default-label: main
+
+logging:
+  level:
+    web: debug

@@ -1,0 +1,5 @@
+com/tradeinsurance/apigatewayservice/filter/GlobalFilter.class
+com/tradeinsurance/apigatewayservice/ApigatewayServiceApplication.class
+com/tradeinsurance/apigatewayservice/filter/GlobalFilter$Config.class
+com/tradeinsurance/apigatewayservice/config/SecurityConfig.class
+com/tradeinsurance/apigatewayservice/config/ActuatorHttpExchangesConfiguration.class
