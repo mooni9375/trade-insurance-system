@@ -18,6 +18,8 @@
   </modules>
 
   <properties>
+    <spring.cloud.config.version>4.1.3</spring.cloud.config.version>
+    <spring.cloud.bootstrap.version>4.1.4</spring.cloud.bootstrap.version>
     <spring-kafka.version>3.2.2</spring-kafka.version>
     <kafka-avro-serializer.version>7.7.0</kafka-avro-serializer.version>
     <avro.version>1.12.0</avro.version>
@@ -38,7 +40,30 @@
   <!-- 공통으로 사용하는 의존성의 버전 관리 역할. 하위 모듈에서 사용하려면 하위 모듈에서 추가 필요 -->
   <dependencyManagement>
     <dependencies>
+
+      <!-- common configuration -->
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-config</artifactId>
+        <version>${spring.cloud.config.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-bootstrap</artifactId>
+        <version>${spring.cloud.bootstrap.version}</version>
+      </dependency>
+
       <!-- internal service -->
+      <dependency>
+        <groupId>com.tradeinsurance</groupId>
+        <artifactId>app-application</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.tradeinsurance</groupId>
+        <artifactId>app-container</artifactId>
+        <version>${project.version}</version>
+      </dependency>
       <dependency>
         <groupId>com.tradeinsurance</groupId>
         <artifactId>app-domain-core</artifactId>
