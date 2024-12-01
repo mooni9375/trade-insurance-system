@@ -1,28 +1,6 @@
 server:
   port: 8000
 
-#system:
-#  properties:
-#    io.netty.dns.noNative: true
-spring:
-  application:
-    name: apigateway-service
-  cloud:
-    config:
-      name: tradeinsurance
-  config:
-    import: configserver:http://127.0.0.1:8888
-
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: gateway, info, refresh, health, beans, httptrace
-  endpoint:
-    info:
-      enabled: true
-
 
 eureka:
   client:
@@ -34,7 +12,18 @@ eureka:
   application:
     name: apigateway-service
 
+#system:
+#  properties:
+#    io.netty.dns.noNative: true
+
+spring:
+  application:
+    name: apigateway-service
+  config:
+    import: configserver:http://127.0.0.1:8888
   cloud:
+    config:
+      name: tradeinsurance
     gateway:
       default-filters:
         - name: GlobalFilter
@@ -45,31 +34,50 @@ eureka:
       # CustomFilter : 라우터별로 각각 설정 필요 (vs GlobalFilter)
       routes:
         - id: app-service
-          uri: lb://app-service
+          uri: lb://APP-SERVICE
           predicates:
             - Path=/app-service/**
             - Method=GET,POST
           filters:
-#            - RemoveRequestHeader=Cookie
+            - RemoveRequestHeader=Cookie
             - RewritePath=/app-service/(?<segment>.*), /$\{segment}
-        - id: app-service-actuator
-          uri: lb://app-service
+        - id: app-service
+          uri: lb://APP-SERVICE
           predicates:
             - Path=/app-service/actuator/**
             - Method=GET,POST
           filters:
-#            - RemoveRequestHeader=Cookie
+            - RemoveRequestHeader=Cookie
             - RewritePath=/app-service/(?<segment>.*), /$\{segment}
         - id: review-service
-          uri: lb://review-service
+          uri: lb://REVIEW-SERVICE
           predicates:
             - Path=/review-service/**
           filters:
-#            - RemoveRequestHeader=Cookie
+            - RemoveRequestHeader=Cookie
             - RewritePath=/review-service/(?<segment>.*), /$\{segment}
+
+
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    info:
+      enabled: true
+    health:
+      show-details: always
+
+
+
+
 
 
 logging:
   level:
     org.springframework.cloud.gateway: DEBUG
+    org.springframework.cloud.netflix.eureka: DEBUG
     io.netty: DEBUG

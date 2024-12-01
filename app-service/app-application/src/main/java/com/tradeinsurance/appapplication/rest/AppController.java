@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
-@RequestMapping("/app-service")
+@RequestMapping("/")
 public class AppController {
 
     private Environment env;
@@ -29,7 +29,7 @@ public class AppController {
         stringBuilder.append("port(local.server.port) = " + env.getProperty("local.server.port")).append(System.lineSeparator());
         stringBuilder.append("port(server.port) = " + env.getProperty("server.port")).append(System.lineSeparator());
         stringBuilder.append("token secret = " + env.getProperty("token.secret")).append(System.lineSeparator());
-        stringBuilder.append("token expiration time = " + env.getProperty("token.expirationTime"));
+        stringBuilder.append("token expiration time = " + env.getProperty("token.expiration_time"));
 
         log.info(stringBuilder.toString());
 
