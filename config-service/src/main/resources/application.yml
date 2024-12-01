@@ -4,13 +4,16 @@ server:
 spring:
   application:
     name: config-service
+#  profiles:
+#    active: native
   cloud:
     config:
       server:
-#        native:
-#          search-locations: file:///Users/mooni/development/trade-insurance-system-settings
+        native:
+          search-locations: file:///Users/mooni/development/trade-insurance-system-settings
         git:
-          uri: file:///Users/mooni/development/trade-insurance-system-settings
+#          uri:
+          uri: https://github.com/mooni9375/trade-insurance-system-config
           default-label: main
 
 logging:
