@@ -1,13 +1,6 @@
 server:
   port: 0
 
-spring:
-  application:
-    name: review-service
-  cloud:
-    config:
-      name: review-service
-
 eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
@@ -17,3 +10,34 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka
 
+spring:
+  application:
+    name: review-service
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+  config:
+    import: configserver:http://127.0.0.1:8888
+  profiles:
+    active: dev
+  cloud:
+    config:
+      name: tradeinsurance
+      profile: dev
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    info:
+      enabled: true
+    health:
+      show-details: always
+
+logging:
+  level:
+    web: debug

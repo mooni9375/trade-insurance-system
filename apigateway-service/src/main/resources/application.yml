@@ -7,19 +7,22 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://127.0.0.1:8761/eureka
-  application:
-    name: apigateway-service
 
 spring:
   application:
     name: apigateway-service
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
   config:
     import: configserver:http://127.0.0.1:8888
   profiles:
     active: dev
   cloud:
     config:
-      name: tradeinsurance-dev
+      name: tradeinsurance
     gateway:
       default-filters:
         - name: GlobalFilter
@@ -49,6 +52,14 @@ spring:
           uri: lb://REVIEW-SERVICE
           predicates:
             - Path=/review-service/**
+          filters:
+            - RemoveRequestHeader=Cookie
+            - RewritePath=/review-service/(?<segment>.*), /$\{segment}
+        - id: review-service
+          uri: lb://REVIEW-SERVICE
+          predicates:
+            - Path=/review-service/actuator/**
+            - Method=GET,POST
           filters:
             - RemoveRequestHeader=Cookie
             - RewritePath=/review-service/(?<segment>.*), /$\{segment}

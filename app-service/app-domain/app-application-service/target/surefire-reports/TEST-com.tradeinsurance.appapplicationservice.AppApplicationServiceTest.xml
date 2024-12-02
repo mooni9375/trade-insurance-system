@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.tradeinsurance.appapplicationservice.AppApplicationServiceTest" time="1.417" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.tradeinsurance.appapplicationservice.AppApplicationServiceTest" time="1.178" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -14,7 +14,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="KR"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/mooni/development/trade-insurance-system/app-service/app-domain/app-application-service/target/surefire/surefirebooter-20241201111515881_11.jar /Users/mooni/development/trade-insurance-system/app-service/app-domain/app-application-service/target/surefire 2024-12-01T11-15-09_032-jvmRun1 surefire-20241201111515881_9tmp surefire_2-20241201111515881_10tmp"/>
+    <property name="sun.java.command" value="/Users/mooni/development/trade-insurance-system/app-service/app-domain/app-application-service/target/surefire/surefirebooter-20241202220306291_11.jar /Users/mooni/development/trade-insurance-system/app-service/app-domain/app-application-service/target/surefire 2024-12-02T22-02-57_895-jvmRun1 surefire-20241202220306291_9tmp surefire_2-20241202220306291_10tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/mooni/development/trade-insurance-system/app-service/app-domain/app-application-service/target/test-classes:/Users/mooni/development/trade-insurance-system/app-service/app-domain/app-application-service/target/classes:/Users/mooni/development/trade-insurance-system/app-service/app-domain/app-domain-core/target/app-domain-core-1.0-SNAPSHOT.jar:/Users/mooni/.m2/repository/com/tradeinsurance/common-library/1.0-SNAPSHOT/common-library-1.0-SNAPSHOT.jar:/Users/mooni/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.3.4/spring-boot-starter-validation-3.3.4.jar:/Users/mooni/.m2/repository/org/springframework/boot/spring-boot-starter/3.3.4/spring-boot-starter-3.3.4.jar:/Users/mooni/.m2/repository/org/springframework/boot/spring-boot/3.3.4/spring-boot-3.3.4.jar:/Users/mooni/.m2/repository/org/springframework/spring-context/6.1.13/spring-context-6.1.13.jar:/Users/mooni/.m2/repository/org/springframework/spring-aop/6.1.13/spring-aop-6.1.13.jar:/Users/mooni/.m2/repository/org/springframework/spring-expression/6.1.13/spring-expression-6.1.13.jar:/Users/mooni/.m2/repository/io/micrometer/micrometer-observation/1.12.10/micrometer-observation-1.12.10.jar:/Users/mooni/.m2/repository/io/micrometer/micrometer-commons/1.12.10/micrometer-commons-1.12.10.jar:/Users/mooni/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.3.4/spring-boot-autoconfigure-3.3.4.jar:/Users/mooni/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.3.4/spring-boot-starter-logging-3.3.4.jar:/Users/mooni/.m2/repository/ch/qos/logback/logback-classic/1.5.8/logback-classic-1.5.8.jar:/Users/mooni/.m2/repository/ch/qos/logback/logback-core/1.5.8/logback-core-1.5.8.jar:/Users/mooni/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.23.1/log4j-to-slf4j-2.23.1.jar:/Users/mooni/.m2/repository/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar:/Users/mooni/.m2/repository/org/slf4j/jul-to-slf4j/2.0.16/jul-to-slf4j-2.0.16.jar:/Users/mooni/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/mooni/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/mooni/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.30/tomcat-embed-el-10.1.30.jar:/Users/mooni/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar:/Users/mooni/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/Users/mooni/.m2/repository/org/jboss/logging/jboss-logging/3.4.3.Final/jboss-logging-3.4.3.Final.jar:/Users/mooni/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/Users/mooni/.m2/repository/org/springframework/spring-tx/6.2.0/spring-tx-6.2.0.jar:/Users/mooni/.m2/repository/org/springframework/spring-beans/6.2.0/spring-beans-6.2.0.jar:/Users/mooni/.m2/repository/org/springframework/spring-core/6.2.0/spring-core-6.2.0.jar:/Users/mooni/.m2/repository/org/springframework/spring-jcl/6.2.0/spring-jcl-6.2.0.jar:/Users/mooni/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.3.4/spring-boot-starter-test-3.3.4.jar:/Users/mooni/.m2/repository/org/springframework/boot/spring-boot-test/3.3.4/spring-boot-test-3.3.4.jar:/Users/mooni/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.3.4/spring-boot-test-autoconfigure-3.3.4.jar:/Users/mooni/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/mooni/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/mooni/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/mooni/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/mooni/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/mooni/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/mooni/.m2/repository/org/assertj/assertj-core/3.25.3/assertj-core-3.25.3.jar:/Users/mooni/.m2/repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/Users/mooni/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/mooni/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.3/junit-jupiter-5.10.3.jar:/Users/mooni/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.3/junit-jupiter-api-5.10.3.jar:/Users/mooni/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/mooni/.m2/repository/org/junit/platform/junit-platform-commons/1.10.3/junit-platform-commons-1.10.3.jar:/Users/mooni/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/mooni/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.3/junit-jupiter-params-5.10.3.jar:/Users/mooni/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.3/junit-jupiter-engine-5.10.3.jar:/Users/mooni/.m2/repository/org/junit/platform/junit-platform-engine/1.10.3/junit-platform-engine-1.10.3.jar:/Users/mooni/.m2/repository/org/mockito/mockito-junit-jupiter/5.11.0/mockito-junit-jupiter-5.11.0.jar:/Users/mooni/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/mooni/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/mooni/.m2/repository/org/springframework/spring-test/6.1.13/spring-test-6.1.13.jar:/Users/mooni/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/Users/mooni/.m2/repository/org/mockito/mockito-core/5.12.0/mockito-core-5.12.0.jar:/Users/mooni/.m2/repository/net/bytebuddy/byte-buddy/1.14.15/byte-buddy-1.14.15.jar:/Users/mooni/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.15/byte-buddy-agent-1.14.15.jar:/Users/mooni/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/mooni/.m2/repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar:/Users/mooni/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:"/>
@@ -32,7 +32,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
     <property name="java.awt.headless" value="true"/>
-    <property name="surefire.real.class.path" value="/Users/mooni/development/trade-insurance-system/app-service/app-domain/app-application-service/target/surefire/surefirebooter-20241201111515881_11.jar"/>
+    <property name="surefire.real.class.path" value="/Users/mooni/development/trade-insurance-system/app-service/app-domain/app-application-service/target/surefire/surefirebooter-20241202220306291_11.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
@@ -50,7 +50,7 @@
     <property name="user.dir" value="/Users/mooni/development/trade-insurance-system/app-service/app-domain/app-application-service"/>
     <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="51827"/>
+    <property name="PID" value="8985"/>
     <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/mooni/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
@@ -61,7 +61,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testAppAmountIsNotUnitOf1000" classname="com.tradeinsurance.appapplicationservice.AppApplicationServiceTest" time="0.044">
+  <testcase name="testAppAmountIsNotUnitOf1000" classname="com.tradeinsurance.appapplicationservice.AppApplicationServiceTest" time="0.04">
     <system-out><![CDATA[
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -72,18 +72,18 @@
 
  :: Spring Boot ::                (v3.3.4)
 
-2024-12-01T11:15:16.524+09:00  INFO 51827 --- [           main] c.t.a.AppApplicationServiceTest          : Starting AppApplicationServiceTest using Java 17.0.12 with PID 51827 (started by mooni in /Users/mooni/development/trade-insurance-system/app-service/app-domain/app-application-service)
-2024-12-01T11:15:16.526+09:00  INFO 51827 --- [           main] c.t.a.AppApplicationServiceTest          : No active profile set, falling back to 1 default profile: "default"
-2024-12-01T11:15:17.537+09:00  INFO 51827 --- [           main] c.t.a.AppApplicationServiceTest          : Started AppApplicationServiceTest in 1.148 seconds (process running for 1.621)
+2024-12-02T22:03:06.831+09:00  INFO 8985 --- [           main] c.t.a.AppApplicationServiceTest          : Starting AppApplicationServiceTest using Java 17.0.12 with PID 8985 (started by mooni in /Users/mooni/development/trade-insurance-system/app-service/app-domain/app-application-service)
+2024-12-02T22:03:06.832+09:00  INFO 8985 --- [           main] c.t.a.AppApplicationServiceTest          : No active profile set, falling back to 1 default profile: "default"
+2024-12-02T22:03:07.660+09:00  INFO 8985 --- [           main] c.t.a.AppApplicationServiceTest          : Started AppApplicationServiceTest in 0.947 seconds (process running for 1.335)
 ]]></system-out>
   </testcase>
   <testcase name="testCreateApp" classname="com.tradeinsurance.appapplicationservice.AppApplicationServiceTest" time="0.004">
-    <system-out><![CDATA[2024-12-01T11:15:17.611+09:00  INFO 51827 --- [           main] c.t.appdomaincore.AppDomainServiceImpl   : app with id: 930c5459-8d48-4397-a5fc-1099f4342321 is initialized
-2024-12-01T11:15:17.612+09:00  INFO 51827 --- [           main] c.t.a.AppCreateHelper                    : App is saved with id: com.tradeinsurance.commonlibrary.domain.valueobject.AppId@4f8c2476
-2024-12-01T11:15:17.612+09:00  INFO 51827 --- [           main] c.t.a.AppCreateHelper                    : App is created with id: com.tradeinsurance.commonlibrary.domain.valueobject.AppId@4f8c2476
-2024-12-01T11:15:17.612+09:00  INFO 51827 --- [           main] c.t.a.AppCreateCommandHandler            : App is created with id: 930c5459-8d48-4397-a5fc-1099f4342321
-2024-12-01T11:15:17.613+09:00  INFO 51827 --- [           main] c.t.a.AppApplicationServiceTest          : createAppResponse.getMessage() :: >> App created successfully.
+    <system-out><![CDATA[2024-12-02T22:03:07.730+09:00  INFO 8985 --- [           main] c.t.appdomaincore.AppDomainServiceImpl   : app with id: 9d904acc-37f0-4ca6-9eb3-8bf69cd32c32 is initialized
+2024-12-02T22:03:07.731+09:00  INFO 8985 --- [           main] c.t.a.AppCreateHelper                    : App is saved with id: com.tradeinsurance.commonlibrary.domain.valueobject.AppId@a800a1ae
+2024-12-02T22:03:07.731+09:00  INFO 8985 --- [           main] c.t.a.AppCreateHelper                    : App is created with id: com.tradeinsurance.commonlibrary.domain.valueobject.AppId@a800a1ae
+2024-12-02T22:03:07.731+09:00  INFO 8985 --- [           main] c.t.a.AppCreateCommandHandler            : App is created with id: 9d904acc-37f0-4ca6-9eb3-8bf69cd32c32
+2024-12-02T22:03:07.732+09:00  INFO 8985 --- [           main] c.t.a.AppApplicationServiceTest          : createAppResponse.getMessage() :: >> App created successfully.
 ]]></system-out>
   </testcase>
-  <testcase name="testAppAmountIsUnder5000" classname="com.tradeinsurance.appapplicationservice.AppApplicationServiceTest" time="0.001"/>
+  <testcase name="testAppAmountIsUnder5000" classname="com.tradeinsurance.appapplicationservice.AppApplicationServiceTest" time="0.002"/>
 </testsuite>

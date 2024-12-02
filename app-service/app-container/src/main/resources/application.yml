@@ -13,13 +13,18 @@ eureka:
 spring:
   application:
     name: app-service
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
   config:
     import: configserver:http://127.0.0.1:8888
-  profiles:
-    active: dev
   cloud:
     config:
-      name: tradeinsurance-dev
+      name: tradeinsurance
+  profiles:
+    active: dev
 
 management:
   endpoints:
@@ -32,8 +37,10 @@ management:
     health:
       show-details: always
 
-
-
 logging:
   level:
     web: debug
+
+system:
+  properties:
+    io.netty.dns.noNative: false
