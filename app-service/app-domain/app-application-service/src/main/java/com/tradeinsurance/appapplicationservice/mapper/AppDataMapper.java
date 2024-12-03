@@ -4,7 +4,9 @@ package com.tradeinsurance.appapplicationservice.mapper;
 import com.tradeinsurance.appapplicationservice.dto.create.AppStreetAddress;
 import com.tradeinsurance.appapplicationservice.dto.create.CreateAppCommand;
 import com.tradeinsurance.appapplicationservice.dto.create.CreateAppResponse;
+import com.tradeinsurance.appapplicationservice.dto.message.AppReviewMessage;
 import com.tradeinsurance.appdomaincore.entity.App;
+import com.tradeinsurance.appdomaincore.event.AppCreatedEvent;
 import com.tradeinsurance.appdomaincore.valueobject.StreetAddress;
 import com.tradeinsurance.commonlibrary.domain.valueobject.CustomerId;
 import com.tradeinsurance.commonlibrary.domain.valueobject.Money;
@@ -32,6 +34,15 @@ public class AppDataMapper {
         return CreateAppResponse.builder()
                 .appStatus(app.getAppStatus())
                 .message(message)
+                .build();
+    }
+
+    public AppReviewMessage appCreatedEventToAppReviewMessage(AppCreatedEvent appCreatedEvent) {
+        return AppReviewMessage.builder()
+                .appId(appCreatedEvent.getApp().getId().getValue().toString())
+                .appAmount(appCreatedEvent.getApp().getAppAmount().getAmount())
+                .importerCountryCode(appCreatedEvent.getApp().getImporterCountryCode().getCode())
+                .createdAt(appCreatedEvent.getCreatedAt())
                 .build();
     }
 

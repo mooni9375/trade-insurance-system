@@ -1,3 +1,3 @@
-com/tradeinsurance/appmessaging/publisher/kafka/ReviewRequestEventKafkaPublisher.class
-com/tradeinsurance/appmessaging/publisher/kafka/CustomerRequestEventKafkaPublisher.class
+com/tradeinsurance/appmessaging/publisher/kafka/AppReviewEventKafkaPublisher.class
+com/tradeinsurance/appmessaging/publisher/kafka/InsurancePolicyIssuedEventKafkaPublisher.class
 com/tradeinsurance/appmessaging/mapper/AppMessagingDataMapper.class

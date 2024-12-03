@@ -1,7 +1,8 @@
 package com.tradeinsurance.appapplicationservice.ports.output.message.publisher.review;
 
-import com.tradeinsurance.appdomaincore.event.AppCreatedEvent;
-import com.tradeinsurance.commonlibrary.domain.event.publisher.DomainEventPublisher;
+import com.tradeinsurance.appapplicationservice.dto.message.AppReviewMessage;
 
-public interface ReviewRequestMessagePublisher extends DomainEventPublisher<AppCreatedEvent> {
+public interface ReviewRequestMessagePublisher {
+
+    void publish(AppReviewMessage appReviewMessage);
 }

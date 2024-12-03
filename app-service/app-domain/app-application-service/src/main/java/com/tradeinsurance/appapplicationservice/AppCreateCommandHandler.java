@@ -2,6 +2,7 @@ package com.tradeinsurance.appapplicationservice;
 
 import com.tradeinsurance.appapplicationservice.dto.create.CreateAppCommand;
 import com.tradeinsurance.appapplicationservice.dto.create.CreateAppResponse;
+import com.tradeinsurance.appapplicationservice.dto.message.AppReviewMessage;
 import com.tradeinsurance.appapplicationservice.mapper.AppDataMapper;
 import com.tradeinsurance.appapplicationservice.ports.output.message.publisher.review.ReviewRequestMessagePublisher;
 import com.tradeinsurance.appdomaincore.event.AppCreatedEvent;
@@ -38,7 +39,9 @@ public class AppCreateCommandHandler {
         log.info("App is created with id: {}", appCreatedEvent.getApp().getId().getValue());
 
         // Event publishing
-        reviewRequestMessagePublisher.publish(appCreatedEvent);
+        // AppCreatedEvent -> AppReviewMessage : 변환해서 넘겨줘야 함
+        AppReviewMessage appReviewMessage = appDataMapper.appCreatedEventToAppReviewMessage(appCreatedEvent);
+        reviewRequestMessagePublisher.publish(appReviewMessage);
 
         return appDataMapper.appToCreateAppResponse(appCreatedEvent.getApp(), "App created successfully.");
     }

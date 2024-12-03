@@ -5,6 +5,7 @@
 /Users/mooni/development/trade-insurance-system/app-service/app-domain/app-application-service/src/main/java/com/tradeinsurance/appapplicationservice/dto/create/CreateAppCommand.java
 /Users/mooni/development/trade-insurance-system/app-service/app-domain/app-application-service/src/main/java/com/tradeinsurance/appapplicationservice/dto/create/CreateAppResponse.java
 /Users/mooni/development/trade-insurance-system/app-service/app-domain/app-application-service/src/main/java/com/tradeinsurance/appapplicationservice/dto/message/AppRequest.java
+/Users/mooni/development/trade-insurance-system/app-service/app-domain/app-application-service/src/main/java/com/tradeinsurance/appapplicationservice/dto/message/AppReviewMessage.java
 /Users/mooni/development/trade-insurance-system/app-service/app-domain/app-application-service/src/main/java/com/tradeinsurance/appapplicationservice/dto/message/ReviewResponse.java
 /Users/mooni/development/trade-insurance-system/app-service/app-domain/app-application-service/src/main/java/com/tradeinsurance/appapplicationservice/mapper/AppDataMapper.java
 /Users/mooni/development/trade-insurance-system/app-service/app-domain/app-application-service/src/main/java/com/tradeinsurance/appapplicationservice/ports/input/message/listener/customer/CustomerMessageListener.java

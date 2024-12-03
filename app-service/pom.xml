@@ -24,11 +24,9 @@
     <spring.boot.actuator.version>3.3.5</spring.boot.actuator.version>
     <netty.version>4.1.94.Final</netty.version>
     <spring-kafka.version>3.2.2</spring-kafka.version>
-    <kafka-avro-serializer.version>7.7.0</kafka-avro-serializer.version>
-    <avro.version>1.12.0</avro.version>
-    <spring.boot.version>3.3.4</spring.boot.version>
-    <spring.boot.validation.version>3.3.4</spring.boot.validation.version>
-    <spring.boot.test.version>3.3.4</spring.boot.test.version>
+    <spring.boot.version>3.3.5</spring.boot.version>
+    <spring.boot.validation.version>3.3.5</spring.boot.validation.version>
+    <spring.boot.test.version>3.3.5</spring.boot.test.version>
     <spring.tx.version>6.2.0</spring.tx.version>
     <spring.boot.jpa>3.3.5</spring.boot.jpa>
     <postgresql.version>42.7.4</postgresql.version>
