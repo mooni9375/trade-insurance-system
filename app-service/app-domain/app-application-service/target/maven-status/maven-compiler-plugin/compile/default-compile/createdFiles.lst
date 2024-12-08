@@ -8,6 +8,7 @@ com/tradeinsurance/appapplicationservice/ports/output/message/publisher/customer
 com/tradeinsurance/appapplicationservice/dto/message/AppRequest.class
 com/tradeinsurance/appapplicationservice/dto/message/AppReviewMessage$AppReviewMessageBuilder.class
 com/tradeinsurance/appapplicationservice/AppApplicationServiceImpl.class
+com/tradeinsurance/appapplicationservice/config/AppServiceConfigData.class
 com/tradeinsurance/appapplicationservice/ports/output/repository/ReviewRepository.class
 com/tradeinsurance/appapplicationservice/ports/output/message/publisher/review/ReviewRequestMessagePublisher.class
 com/tradeinsurance/appapplicationservice/ports/output/repository/CustomerRepository.class

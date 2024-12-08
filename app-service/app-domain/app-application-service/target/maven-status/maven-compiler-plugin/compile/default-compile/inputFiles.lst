@@ -1,6 +1,7 @@
 /Users/mooni/development/trade-insurance-system/app-service/app-domain/app-application-service/src/main/java/com/tradeinsurance/appapplicationservice/AppApplicationServiceImpl.java
 /Users/mooni/development/trade-insurance-system/app-service/app-domain/app-application-service/src/main/java/com/tradeinsurance/appapplicationservice/AppCreateCommandHandler.java
 /Users/mooni/development/trade-insurance-system/app-service/app-domain/app-application-service/src/main/java/com/tradeinsurance/appapplicationservice/AppCreateHelper.java
+/Users/mooni/development/trade-insurance-system/app-service/app-domain/app-application-service/src/main/java/com/tradeinsurance/appapplicationservice/config/AppServiceConfigData.java
 /Users/mooni/development/trade-insurance-system/app-service/app-domain/app-application-service/src/main/java/com/tradeinsurance/appapplicationservice/dto/create/AppStreetAddress.java
 /Users/mooni/development/trade-insurance-system/app-service/app-domain/app-application-service/src/main/java/com/tradeinsurance/appapplicationservice/dto/create/CreateAppCommand.java
 /Users/mooni/development/trade-insurance-system/app-service/app-domain/app-application-service/src/main/java/com/tradeinsurance/appapplicationservice/dto/create/CreateAppResponse.java

@@ -1,3 +1,0 @@
-/Users/mooni/development/trade-insurance-system/app-service/app-messaging/src/main/java/com/tradeinsurance/appmessaging/mapper/AppMessagingDataMapper.java
-/Users/mooni/development/trade-insurance-system/app-service/app-messaging/src/main/java/com/tradeinsurance/appmessaging/publisher/kafka/AppReviewEventKafkaPublisher.java
-/Users/mooni/development/trade-insurance-system/app-service/app-messaging/src/main/java/com/tradeinsurance/appmessaging/publisher/kafka/InsurancePolicyIssuedEventKafkaPublisher.java

@@ -1,23 +1,30 @@
 
 package com.tradeinsurance.appapplication.rest;
 
+import com.tradeinsurance.appapplicationservice.dto.create.CreateAppCommand;
+import com.tradeinsurance.appapplicationservice.dto.create.CreateAppResponse;
+import com.tradeinsurance.appapplicationservice.ports.input.service.AppApplicationService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 @Slf4j
 @RestController
 @RequestMapping("/")
+@ComponentScan(basePackages = {"com.tradeinsurance.appapplicationservice", "com.tradeinsurance.appdomaincore"})
 public class AppController {
 
     private Environment env;
+    private final AppApplicationService appApplicationService;
 
     @Autowired
-    public AppController(Environment env) {
+    public AppController(Environment env,
+                         AppApplicationService appApplicationService) {
         this.env = env;
+        this.appApplicationService = appApplicationService;
     }
 
     @GetMapping("/health_check")
@@ -34,14 +41,15 @@ public class AppController {
         log.info(stringBuilder.toString());
 
         return stringBuilder.toString();
+    }
 
+    @PostMapping("/app_register")
+    public ResponseEntity<CreateAppResponse> registerApp(@RequestBody CreateAppCommand createAppCommand) {
+        log.info("Creating order for customer: {}", createAppCommand.getCustomerId());
 
-//        return String.format("It's Working in App Service\n"
-//                        + "port(local.server.port) = " + env.getProperty("local.server.port" + "\n")
-//                        + "port(server.port) = " + env.getProperty("server.port" + "\n")
-//                        + "token secret = " + env.getProperty("token.secret" + "\n")
-//                        + "token expiration time = " + env.getProperty("token.expirationTime")
-//        );
+        CreateAppResponse createAppResponse = appApplicationService.createApp(createAppCommand);
+
+        return ResponseEntity.ok(createAppResponse);
     }
 
 
