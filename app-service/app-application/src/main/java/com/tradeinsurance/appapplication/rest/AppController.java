@@ -14,7 +14,10 @@ import org.springframework.web.bind.annotation.*;
 @Slf4j
 @RestController
 @RequestMapping("/")
-@ComponentScan(basePackages = {"com.tradeinsurance.appapplicationservice", "com.tradeinsurance.appdomaincore"})
+@ComponentScan(basePackages = {"com.tradeinsurance.appapplication",
+        "com.tradeinsurance.appcontainer",
+        "com.tradeinsurance.appapplicationservice",
+        "com.tradeinsurance.appdomaincore"})
 public class AppController {
 
     private Environment env;
